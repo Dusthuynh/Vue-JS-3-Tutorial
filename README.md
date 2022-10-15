@@ -1,4 +1,4 @@
-# [SRC](https://youtube.com/playlist?list=PLU4OBh9yHE94sZ3TPGt0QG_PIwrZ1QF6i)
+# [Vue JS 3 Tutorial For Beginners - RHP Team](https://youtube.com/playlist?list=PLU4OBh9yHE94sZ3TPGt0QG_PIwrZ1QF6i)
 
 # Basic Knowledge
 
