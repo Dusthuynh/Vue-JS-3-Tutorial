@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue js 3 Tutorials</title>
+    <style>
+      .card-products {
+        display: flex;
+        flex-direction: row;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 180px;
+        height: 180px;
+        /* background-color: antiquewhi  te; */
+        margin-bottom: 30px;
+        overflow: hidden;
+      }
+      .card.card-thumb {
+        width: 180px;
+        height: auto;
+      }
+      .card.cart {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello from vue Tutorials</h1>
+    <section id="contact">
+      <div class="card-products card-container">
+        <div
+          class="card"
+          v-for="mon in productsComputed"
+          :class="{cart: mon.isCart}"
+          @dblclick="onToggleCart($event,mon)"
+        >
+          <img class="card-thumb" :src="mon.img" />
+          <h3>{{mon.name}}</h3>
+          <p>{{mon.price}}</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
