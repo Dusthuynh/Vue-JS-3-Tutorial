@@ -15,4 +15,8 @@
 
 # Vue CLI (Vue Command Line Interface)
 
+- .vue
+- Template ref
+- Fix elints
+
 # Component
